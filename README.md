@@ -3,7 +3,7 @@
 ## Getting Going
  * [Rasbien Images](https://www.raspberrypi.com/software/operating-systems/)
  * [Balena](https://www.balena.io/etcher/) (For image Flashing)
- * SSH Access
+ * Enable SSH Access
    * In boot Volume:
      * create empty file named `ssh`
      * create `/etc/wpa_supplicant/wpa_supplicant.conf` (use atom for better line endings). With contents:
@@ -26,3 +26,5 @@
       * `sudo chmod 664 ~/.ssh/authorized_keys`
     * Disable password login: Modify `/etc/ssh/sshd_config` with `PasswordAuthentication no`
      
+## Git
+Generate SSH Key: `ssh-keygen -b 2048 -t rsa`
