@@ -25,6 +25,14 @@
       * `sudo chown pi:pi ~/.ssh/authorized_keys`
       * `sudo chmod 664 ~/.ssh/authorized_keys`
     * Disable password login: Modify `/etc/ssh/sshd_config` with `PasswordAuthentication no`
-     
+
+  
+## Update   
+
+```
+sudo apt update
+sudo apt full-upgrade
+```
+  
 ## Git
 Generate SSH Key: `ssh-keygen -b 2048 -t rsa`
