@@ -34,5 +34,14 @@ sudo apt update
 sudo apt full-upgrade
 ```
   
+## Python w/ Pip
+
+```
+sudo apt install python3-distutils
+curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+rm get-pip.py
+```
+  
 ## Git
 Generate SSH Key: `ssh-keygen -b 2048 -t rsa`
